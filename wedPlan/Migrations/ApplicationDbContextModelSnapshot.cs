@@ -11,10 +11,9 @@ using wedPlan.Data;
 namespace wedPlan.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20171128223827_String2IntUserTable")]
-    partial class String2IntUserTable
+    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -179,6 +178,36 @@ namespace wedPlan.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("wedPlan.Models.Guest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Guest");
+                });
+
+            modelBuilder.Entity("wedPlan.Models.Wedding", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<DateTime>("Date");
+
+                    b.Property<string>("Location");
+
+                    b.Property<string>("Wedder1");
+
+                    b.Property<string>("Wedder2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Wedding");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>

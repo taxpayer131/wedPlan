@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace wedPlan.Migrations
 {
-    public partial class String2IntUserTable : Migration
+    public partial class allModels : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -50,6 +50,35 @@ namespace wedPlan.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Guest",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Guest", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Wedding",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Date = table.Column<DateTime>(nullable: false),
+                    Location = table.Column<string>(nullable: true),
+                    Wedder1 = table.Column<string>(nullable: true),
+                    Wedder2 = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Wedding", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -214,6 +243,12 @@ namespace wedPlan.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Guest");
+
+            migrationBuilder.DropTable(
+                name: "Wedding");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

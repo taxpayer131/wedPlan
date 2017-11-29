@@ -9,3 +9,4 @@ C:\Users\Apprentice\Desktop\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\wedPlan.Asse
 C:\Users\Apprentice\Desktop\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\wedPlan.AssemblyInfo.cs
 C:\Users\Apprentice\Desktop\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\wedPlan.dll
 C:\Users\Apprentice\Desktop\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\wedPlan.pdb
+C:\Users\Apprentice\Desktop\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\wedPlan.csprojResolveAssemblyReference.cache
