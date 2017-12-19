@@ -1,0 +1,5 @@
+C:\Users\Apprentice\Desktop\DojoMusicHub\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\DojoMusicHub.csprojResolveAssemblyReference.cache
+C:\Users\Apprentice\Desktop\DojoMusicHub\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\DojoMusicHub.csproj.CoreCompileInputs.cache
+C:\Users\Apprentice\Desktop\DojoMusicHub\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Apprentice\Desktop\DojoMusicHub\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\DojoMusicHub.AssemblyInfoInputs.cache
+C:\Users\Apprentice\Desktop\DojoMusicHub\wedPlan\wedPlan\obj\Debug\netcoreapp2.0\DojoMusicHub.AssemblyInfo.cs
